@@ -119,7 +119,7 @@ jobs:
       curl -v "$URL" -F document=@$Release
     fi
 
-- name: Release apk
+      - name: Release apk
   if: ${{ github.ref_type == 'tag' }}
   uses: ncipollo/release-action@v1
   with:
